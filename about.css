@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    background-color: #4e6984;
+    color: white;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: #4e6984; 
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.Logo {
+    margin-left: 30px;
+}
+
+.Logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px; /* Ajustado para que coincida con el estilo anterior */
+    font-weight: 700; /* Usando un peso más fuerte para el logo */
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #333; /* Color de fondo al pasar el mouse */
+}
+
+.content {
+    padding: 100px 0;
+}
+
+.about {
+    background-color: #4e6984; /* Color de fondo alineado con el estilo general */
+    padding: 50px 0;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: white;
+}
+
+.team-member figure {
+    margin: 0;
+    text-align: center;
+}
+
+.team-member img {
+    height: 220px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.team-member figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .navbar {
+        display: none;
+    }
+}
