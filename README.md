@@ -19,9 +19,6 @@ El proyecto se divide en varias etapas que trabajan juntas para lograr el recono
 4. **Pruebas del modelo (Prueba.py):**  
    Aquí se implementa el modelo entrenado para realizar el reconocimiento de gestos en tiempo real. Al procesar un video o una imagen, el sistema detecta los gestos y los clasifica correctamente.  
 
-## Estructura del Proyecto  
-
-(📁 Aquí puedes agregar un esquema de carpetas si lo deseas)
 
 ## Requisitos  
 - Python 3.x  
