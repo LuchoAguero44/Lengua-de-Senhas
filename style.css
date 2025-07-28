@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    background-color: #f5f5f5;
+    background-size: cover;
+    color: #333;
+}
+
+/* Encabezado */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 55px;
+    background: #4e6984;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.Logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 5px;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar a {
+    padding: 20px 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #37474F;
+    border-radius: 5px;
+}
+
+/* Encabezado principal */
+.header {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(Head.png) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    max-width: 800px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 60px;
+    border: 2px solid #4e6984;
+    color: white;
+    text-decoration: none;
+    background: #4e6984;
+    transition: background 0.3s;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+.btn:hover {
+    background: none;
+}
+
+/* Sección de inicio y objetivos */
+.inicio {
+    padding-top: 100px;
+    background: #4e6984;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.box {
+    height: 11rem;
+    width: 17rem;
+    background: #4e6984;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    font-family: 'Merriweather', serif;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffff;
+}
+
+.box h3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+/* Sección Yo */
+.Yo {
+    background: #4e6984;
+    color: white;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member figure {
+    margin: 0;
+    text-align: center;
+}
+
+.team-member img {
+    height: 220px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-member figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+/* Sección Proceso */
+.Proceso {
+    padding-top: 100px;
+    background: url(Head.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.Resultados {
+    padding-top: 70px;
+    background: #4e6984;
+    color: white;
+    padding-bottom: 100px;
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+    .navbar {
+        display: none;
+    }
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
